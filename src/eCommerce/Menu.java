@@ -2,12 +2,19 @@ package eCommerce;
 
 import java.util.Scanner;
 import eCommerce.util.Cores;
-
+import eCommerce.model.Eletronicos;
 public class Menu {
 
 	public static void main(String[] args) {
 		
 		Scanner leia = new Scanner(System.in);
+		
+		// testando a classe produto
+		Eletronicos item1 = new Eletronicos (1,"Placa-Mãe", 5, 599.00f, 1.9f);
+		item1.visualizar();
+		
+		Eletronicos item2 = new Eletronicos (2,"Placa-Vídeo", 5, 1599.00f, 2.9f);
+		item2.visualizar();
 		
 		int opcao;
 		
