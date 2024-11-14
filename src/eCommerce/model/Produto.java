@@ -3,13 +3,15 @@ package eCommerce.model;
 public abstract class Produto {
 	private int idProduto;
 	private String nome;
+	private int categoria;
 	private int quantidade;
 	private float preco;
 	
 	
-	public Produto(int idProduto, String nome, int quantidade, float preco) {
+	public Produto(int idProduto, String nome, int categoria, int quantidade, float preco) {
 		this.idProduto = idProduto;
 		this.nome = nome;
+		this.categoria = categoria;
 		this.quantidade = quantidade;
 		this.preco = preco;
 	}
@@ -25,6 +27,13 @@ public abstract class Produto {
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+	public int getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(int categoria) {
+		this.categoria = categoria;
 	}
 	public int getQuantidade() {
 		return quantidade;
@@ -45,8 +54,11 @@ public abstract class Produto {
 		System.out.println("------------------------------------------------------------");
 		System.out.println("ID do Produto: " + this.idProduto);
 		System.out.println("Nome: " + this.nome);
+		System.out.println("Categoria: " + this.categoria);
 		System.out.println("Quantidade: " + this.quantidade);
 		System.out.println("Preço: " + this.preco);
 	
 	}
+
+
 }

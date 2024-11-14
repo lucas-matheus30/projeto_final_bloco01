@@ -4,8 +4,8 @@ public class Eletronicos extends Produto{
 	
 	private float voltagem;
 
-	public Eletronicos(int idProduto, String nome, int quantidade, float preco, float voltagem) {
-		super(idProduto, nome, quantidade, preco);
+	public Eletronicos(int idProduto, String nome, int categoria, int quantidade, float preco, float voltagem) {
+		super(idProduto, nome, categoria, quantidade, preco);
 		this.voltagem = voltagem;
 		
 	}
